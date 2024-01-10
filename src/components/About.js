@@ -23,7 +23,7 @@ const About = () => {
           initial= 'hidden'
           whileInView={'show'}
           viewport={{once:false,amount:0.3}}
-          className='flex-1 bg-about bg-contain bg-no-repeat min-h-[340px] md:h-[440px] lg:h-[540px] mix-blend-lighten bg-top'>
+          className='flex-1 bg-about bg-contain bg-no-repeat min-h-[340px] md:h-[440px] lg:h-[540px] bg-top'>
           </motion.div>
           {/* text */}
           <div className='flex-1'>

@@ -33,7 +33,7 @@ const Services = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* text & img */}
           <motion.div 
-          variants={fadeIn('right',0.3)}
+          variants={fadeIn('left',0.5)}
           initial='hidden'
           whileInView={'show'}
           viewport={{once:false,amount:0.3}}
@@ -51,7 +51,12 @@ const Services = () => {
 
           </motion.div>
           {/* section  */}
-          <div className='flex-1'>
+          <motion.div
+          variants={fadeIn('right',0.5)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once:false,amount:0.3}}
+          className='flex-1'>
             <div>
               {services.map((service, index) => {
                 const { name, description, link } = service;
@@ -79,7 +84,7 @@ const Services = () => {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

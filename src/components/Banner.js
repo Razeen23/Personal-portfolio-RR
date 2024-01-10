@@ -110,7 +110,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:flex flex-1 max-w-[360px] lg:max-w-[482px]'
+            className='hidden lg:flex flex-1 max-w-[360px] lg:max-w-[482px] ' 
           >
             <motion.img
             className='relative '

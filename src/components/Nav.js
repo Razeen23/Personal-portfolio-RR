@@ -1,6 +1,6 @@
 import React from 'react';
-import { BiHomeAlt, BiUser, BiSolidBriefcaseAlt2, BiCommentCheck } from 'react-icons/bi';
-import { BsFillClipboardDataFill } from 'react-icons/bs';
+import { BiHomeAlt, BiUser, BiSolidBriefcaseAlt2, BiCommentCheck, BiSolidGame, BiPlayCircle } from 'react-icons/bi';
+import { BsFillClipboardDataFill, BsFillSunFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
 const Nav = () => {
@@ -20,6 +20,12 @@ const Nav = () => {
           spy={true}
            to='about' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
             <BiUser />
+          </Link>
+          <Link activeClass='active'
+          smooth={true}
+          spy={true}
+           to='tech' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+            <BiSolidGame />
           </Link>
           <Link activeClass='active'
           smooth={true}

@@ -1,0 +1,65 @@
+/* App.css */
+/* .app-container {
+    @apply relative w-full h-screen overflow-hidden;
+  }
+  
+  .background-video {
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+  } */
+  
+
+  *{
+    cursor: none;
+    /* //background-color: aqua; */
+  }
+
+.cursor-dot,
+.cursor-dot-outline{
+  pointer-events:none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out,transform 0.2s ease-in-out;
+}
+
+.cursor-dot{
+  width: 12px;
+  height: 12px;
+  background-color: #c85ff5;
+}
+
+.cursor-dot-outline{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(210, 131, 232, 0.5);
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* body {
+  min-height: 100lvh;
+  background-color: #050908;
+} */
+
+.circle {
+  --circle-size: 40px;
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 1.5px solid rgb(192, 191, 191);
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
+}

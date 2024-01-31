@@ -3,24 +3,20 @@
 @tailwind utilities;
 
 .btn {
-  background: linear-gradient(to right, #9796f0, #fbc7d4);
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  color: #000000;
+  background:  linear-gradient(-225deg, #bafde9 0%, #fdb3ed 100%);
+  box-shadow: 0px 4.42184px 107.23px rgba(232, 83, 224, 0.51);
 }
 
 .btn:hover {
-  color: #040404;
-  background: linear-gradient(
-    92.23deg,
-    #24315f 21.43%,
-    #1d6688 50.63%,
-    #1f165c 100%,
-    #7e1b79 117.04%
-  );
+  color: #fdfdfd;
+  background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+  box-shadow: 0px 4.42184px 107.23px rgba(238, 236, 238, 0.51);
 }
 
 .gradient,
 .active {
-  background: linear-gradient(to right, #9796f0, #fbc7d4);
+  background: linear-gradient(-225deg, #bafde9 0%, #fdb3ed 100%);
 }
 
 .active {
@@ -36,11 +32,11 @@
   .font1 {
     /* font-family: "WindSong", cursive; */
     font-family: "Rubik Glitch", system-ui;
-    @apply text-[45px] lg:text-[75px]  mb-6 tracking-[10%] uppercase;
+    @apply text-[45px] lg:text-[45px] md:text-[30px] sm:text-[20px] lg:mb-6 md:mb-3 sm:mb-1 tracking-[10%] uppercase;
   }
   .font2 {
     font-family: "Space Grotesk", sans-serif;
-    @apply text-[17px] lg:text-[22px]  mb-6 tracking-[10%] ;
+    @apply text-[17px] lg:text-[22px] md:text-[17px] sm:text-[15px] lg:mb-6 md:mb-3 sm:mb-1 tracking-[10%] ;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -64,7 +60,7 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-9 lg:py-24 lg:h-screen flex items-center;
   }
 }
 

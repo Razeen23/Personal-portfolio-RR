@@ -23,9 +23,10 @@ const Work = () => {
             <h2 className='font1 lg:text-[45px] leading-[1] text-accent'>
               MY Previous Work.
             </h2>
-            <p className='mb-5'>
-            Accomplished projects include a face recognition system demonstrating advanced image processing, a dynamic personal portfolio showcasing technical proficiency, and a UI/UX design project emphasizing user-centric and visually appealing interfaces.            </p>
-            <button className='btn btn-sm'><a href='https://github.com/Razeen23'>View All Projects</a></button>
+            <p className='mb-5 lg:text-[20px] md:text-[19px] sm:text-[16px]'>
+            Accomplished projects include a face recognition system demonstrating advanced image processing, a dynamic personal portfolio showcasing technical proficiency, and a UI/UX design project emphasizing user-centric and visually appealing interfaces.
+            </p>
+            <button className='btn btn-sm lg:h-[45px] lg:w-[200px] md:h-[40px] md:w-[180px] sm:h-[35px] sm:w-[160px] btn-sm lg:text-[14px] md:text-[12px] sm:text-[11px]'><a href='https://github.com/Razeen23'>View All Projects</a></button>
           </div>
           {/* img  */}
           <Tilt className="xs:w-[250px] w-full">

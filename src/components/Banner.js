@@ -1,15 +1,9 @@
 import React from 'react';
-// Image
 import Image from '../assets2/obj1.png';
 import Image2 from '../assets2/obj2.png';
-
-// icons
 import { Fagithub, FaYoutube, FaDribbble, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
-// type animation
 import { TypeAnimation } from 'react-type-animation';
-// motion
 import { motion } from 'framer-motion';
-// variants
 import { fadeIn } from '../variants';
 
 import  { useState, useEffect } from 'react';
@@ -18,30 +12,6 @@ import  { useState, useEffect } from 'react';
 
 
 const Banner = () => {
-
-  // const [pos, setPos] = useState({ x: 0, y: 0 });
-  // const [shadow, setShadow] = useState(true);
-
-  // const onMouseMove = (e) => {
-  //   setPos({
-  //     x: e.pageX,
-  //     y: e.pageY
-  //   });
-
-  //   createShadow();
-  // };
-
-  // const createShadow = () => {
-  //   if ('ontouchstart' in window === false && shadow) {
-  //     let [moveX, moveY] = [(pos.x / -100), (pos.y / -120)];
-  //     let [Section, firstWord, secondWord] = [document.querySelector('.section'), document.querySelector('.playword_1'), document.querySelector('.playword_2')];
-
-  //     firstWord.style.transform = `translate3d(${moveX / 2}px, ${moveY}px, 0)`;
-  //     secondWord.style.transform = `translate3d(${moveX / 2}px, ${moveY}px, 0)`;
-  //     Section.style.textShadow = `${moveX}px ${-moveY}px rgba(0, 0, 0, 0.1)`;
-  //   }
-  // };
-
  
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
@@ -68,7 +38,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='font1 leading-[0.8]'
+              className='font1 text-[45px] lg:text-[75px] md:text-[55px] sm:text-[45px] leading-[0.8]'
               // onMouseMove={onMouseMove}
                >
               <span>Mr.</span>Razeen
@@ -79,7 +49,7 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] ig:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white text-[35px] mr-4'>I'm a</span>
+              <span className='text-white lg:text-[35px] md:text-[30px] sm:text-[27px] mr-4'>I'm a</span>
               <br />
               <TypeAnimation sequence={[
                 'Developer !', 2000,
@@ -87,7 +57,7 @@ const Banner = () => {
                 'counselling Psychologist !', 2000,
               ]}
                 speed={50}
-                className='text-accent text-[35px]'
+                className=' font2 text-accent lg:text-[33px] md:text-[28px] sm:text-[25px] mt-3'
                 wrapper='span'
                 repeat={Infinity}
               />

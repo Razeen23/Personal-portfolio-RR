@@ -47,11 +47,6 @@
   margin: 0;
 }
 
-/* body {
-  min-height: 100lvh;
-  background-color: #050908;
-} */
-
 .circle {
   --circle-size: 40px;
   position: fixed;
@@ -62,4 +57,10 @@
   top: calc(var(--circle-size) / 2 * -1);
   left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .circle {
+    /* display: none; */
+  }
 }

@@ -7,6 +7,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import video from './assets2/bg-v9.mp4';
 import Tech from './components/Tech';
 import Cursur from './components/cursur';
@@ -33,9 +34,9 @@ const App = () => {
         <Tech />
         <Services />
         <Work />
-        <Contact />        
+        <Contact /> 
+        <Footer />       
         
-
       </div>
       {/* <div className='h-[4000px]'></div> */}
     </div>

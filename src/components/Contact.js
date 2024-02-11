@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import styles from "../style";
+import  EarthCanvas  from "./canvas/Earth";
+import SectionWrapper from "../hoc/SectionWrapper";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   
@@ -25,28 +29,13 @@ const Contact = () => {
 </button>
           </div>
         </motion.div>
-        {/* form  */}
-        {/* <div className='flex-1 flex' id='app'>fhfjh</div> */}
-        <motion.form 
-        variants={fadeIn('left',0.5)}
-        initial= 'hidden'
-        whileInView={'show'}
-        viewport={{once:false,amount:0.3}}
-         className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-          <input className='bg-transparent border-b py-3 outline-none w-full
-          placeholder-[text-white] focus:border-accent transition-all'
-          type='text'
-          placeholder='Your Name' />
-          <input className='bg-transparent border-b py-3 outline-none w-full
-          placeholder-[text-white] focus:border-accent transition-all'
-          type='email'
-          placeholder='Your email' />
-          <textarea className='bg-transparent border-b py-3 outline-none w-full
-          placeholder-[text-white] focus:border-accent transition-all resize-none mb-12'
-          placeholder='Your Message'>
-          </textarea>
-          <button className='btn btn-lg '>Send Message</button>
-        </motion.form>
+
+        <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+      >
+        <EarthCanvas />
+      </motion.div>
       </div>
     </div>
   </section>

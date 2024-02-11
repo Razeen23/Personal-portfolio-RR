@@ -2,10 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { Tilt } from 'react-tilt';
-
-import img1 from '../assets/portfolio-img1.png';
-import img2 from '../assets/portfolio-img2.png';
-import img3 from '../assets/portfolio-img3.png';
+import img1 from '../assets/work11.jpg';
+import img2 from '../assets/work4.jpg';
+import img3 from '../assets/work7.jpg';
 
 const Work = () => {
   return (
@@ -31,7 +30,7 @@ const Work = () => {
           {/* img  */}
           <Tilt className="xs:w-[250px] w-full">
 
-          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[300px] lg:w-[500px]'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transiton-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500'
@@ -58,7 +57,7 @@ const Work = () => {
            <Tilt className="xs:w-[250px] w-full">
 
             {/* img  */}
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[300px] lg:w-[500px]'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transiton-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500'
@@ -77,7 +76,7 @@ const Work = () => {
           <Tilt className="xs:w-[250px] w-full">
 
             {/* img  */}
-          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[300px] lg:w-[500px]'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transiton-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500'

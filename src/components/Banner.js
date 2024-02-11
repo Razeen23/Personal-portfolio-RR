@@ -6,10 +6,6 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
-import  { useState, useEffect } from 'react';
-
-
-
 
 const Banner = () => {
  
@@ -57,7 +53,7 @@ const Banner = () => {
                 'counselling Psychologist !', 2000,
               ]}
                 speed={50}
-                className=' font2 text-accent lg:text-[33px] md:text-[28px] sm:text-[25px] mt-3'
+                className=' font2 text-accent lg:text-[31px] md:text-[28px] sm:text-[25px] mt-3'
                 wrapper='span'
                 repeat={Infinity}
               />

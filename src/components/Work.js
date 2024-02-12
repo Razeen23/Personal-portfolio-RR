@@ -87,7 +87,7 @@ const Work = () => {
             </div>
             {/* title  */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all during-700 z-50'>
-              <span className='text-3xl text-white'>Project Title</span>
+              <span className='text-3xl text-white'>website</span>
             </div>
           </div>
           </Tilt>

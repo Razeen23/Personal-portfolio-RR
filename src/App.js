@@ -29,8 +29,6 @@ const App = () => {
       <Cursur />
       <PreLoader />
 
-      <div className="relative z-10">
-      
         <Header />
         <Banner />
         <Nav />
@@ -38,11 +36,12 @@ const App = () => {
         <Tech />
         <Services />
         <Work />
+        <div className="relative z-10">
         <Contact />
         <StarsCanvas /> 
         <Footer />       
-        
-      </div>
+        </div>
+
       {/* )} */}
       {/* <div className='h-[4000px]'></div> */}
     </div>

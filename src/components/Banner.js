@@ -26,6 +26,7 @@ const Banner = () => {
             animate={{ y: [0, -10, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: 'linear' }}
             src={Image2}
+            loading="lazy"
             />
           </motion.div>
           <div className='flex-1 text-center forn-secondary'>
@@ -109,6 +110,8 @@ const Banner = () => {
             animate={{ y: [0, -10, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: 'linear' }}
             src={Image}
+                         loading="lazy"
+
             />
           </motion.div>
         </div>

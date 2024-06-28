@@ -1,6 +1,6 @@
 import React from 'react';
 // import Logo from '../assets/logo.svg';
-import favicon from '../assets/favicon.ico';
+import favicon from '../assets/favicon-32x32.png';
 
 const Header = () => {
   return (

@@ -29,7 +29,7 @@ const Projects = () => {
     return (
         <div>
             <Header />
-            <section className='min-h-[100vh] lg:min-h-[100vh] flex justify-center items-center mt-[-100px]'>
+            <section className='min-h-[100vh] lg:min-h-[100vh] flex justify-center items-center mt-[-50px]'>
                 <div className="relative font-secondary">
                     <div className="px-4 mx-auto max-w-7xl sm:px-6 sm:py-6">
                         <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:grid-cols-2 gap-y-12 lg:gap-x-8 items-center">

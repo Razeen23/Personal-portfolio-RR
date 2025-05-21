@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='container mx-auto'>
           <div className='justify-between items-center' >
           <p className='text-center'>
-  Copyright @ 2024 Razeen. All rights reserved.<br />
+  Copyright @ 2025 Razeen. All rights reserved.<br />
   Naaa Just Kidding, Get my code on Github.
   <span className='end text-red-500'> Work Together, Grow Together</span>
 </p>

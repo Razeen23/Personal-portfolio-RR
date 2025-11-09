@@ -13,28 +13,28 @@ import {
     docker,
     threejs
   } from "../assets";
-  import php from "../assets/tech/php.png"
-  import photoshop from "../assets/tech/photoshop.png"
-  import python from "../assets/tech/python.png"
+  import php from "../assets/tech/php.webp"
+  import photoshop from "../assets/tech/photoshop.webp"
+  import python from "../assets/tech/python.webp"
   
 
 
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React js Developer",
+      title: "React.js Development",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Full Stack Solutions",
+      icon: web,
+    },
+    {
+      title: "API Integration",
       icon: backend,
     },
     {
-      title: "photography",
+      title: "Performance Optimization",
       icon: creator,
     },
   ];
@@ -92,20 +92,20 @@ import {
   
   const services2 = [
     {
-      name: 'UI/UX Design',
-      description: "UI/UX design is about creating visually appealing and user-friendly interfaces. It focuses on enhancing user satisfaction by improving the usability and accessibility of digital products through thoughtful design principles.",
+      name: 'Frontend Development',
+      description: "I build responsive, high-performance React.js applications with modern UI/UX. Specialized in creating interactive dashboards with D3.js visualizations, optimizing performance by 30%+ using code-splitting and lazy loading, and ensuring cross-browser compatibility for 5,000+ active users.",
       link: "Learn More",
   
     },
     {
-      name: 'Front-end Developer',
-      description: "A front-end developer specializes in crafting the user interface and user experience of websites or applications. They implement designs, ensuring seamless interactivity and optimal visual presentation for a compelling user journey",
+      name: 'Full Stack Solutions',
+      description: "I develop end-to-end web applications combining React.js frontends with PHP/Node.js backends. Expertise in state management with Context API, custom hooks, RESTful APIs, and real-time data synchronization. I've architected SaaS ecosystems supporting 1,000+ users.",
       link: "Learn More",
   
     },
     {
-      name: 'Back-end Developer',
-      description: "Back-end developers focus on server-side programming, managing databases, and ensuring the functionality and performance of websites or applications. They work behind the scenes, handling data, logic, and server operations.",
+      name: 'Process Automation',
+      description: "I automate complex workflows and business processes, reducing manual work by 87%+. Specialized in payment gateway integrations (Stripe, Razorpay), server deployment automation, e-invoicing systems, and CI/CD pipelines. Saved 200+ engineering hours monthly through automation.",
       link: "Learn More",
   
     },

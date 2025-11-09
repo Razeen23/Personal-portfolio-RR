@@ -29,10 +29,11 @@ module.exports = {
          //site: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);',
         site: 'linear-gradient(90deg, rgba(181,132,88,0.9038209033613446) 0%, rgba(13,19,25,1) 0%, rgba(15,22,91,1) 0%, rgba(22,22,32,1) 15%, rgba(0,0,0,1) 50%, rgba(22,22,32,1) 85%, rgba(15,22,91,1) 100%)',
         site2: 'linear-gradient(to right, #c9d6ff, #e2e2e2);',
+        light: 'linear-gradient(135deg, #f5f3f0 0%, #e8e6e1 100%)',
 
-        about: "url('./assets2/3d1.png')",
-        services: "url('./assets/services.png')",
-        services2: "url('./assets2/services.png')",
+        about: "url('./assets2/3d1.webp')",
+        services: "url('./assets/services.webp')",
+        services2: "url('./assets2/services.webp')",
 
         },
     },

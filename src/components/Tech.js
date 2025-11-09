@@ -20,7 +20,7 @@ const ServiceCard = ({ index, title, icon }) => {
                     speed: 450
                 }}
                     className='bg-site2 rounded-[50px] py-5 px-120 md:min-h-[240px] sm:min-h-[200px] flex justify-evenly items-center flex-col'>
-                    <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+                    <img src={icon} alt={title} className='w-16 h-16 object-contain' loading="lazy" />
                     <h3 className='text-text text-center lg:text-[20px] md:text-[17px] sm:text-[14px] font-bold'>{title}</h3>
                 </div>
             </motion.div>

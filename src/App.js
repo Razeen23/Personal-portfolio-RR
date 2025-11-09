@@ -8,6 +8,9 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Tech from './components/Tech';
+import Startups from './components/Startups';
+import Experience from './components/Experience';
+import Certifications from './components/Certifications';
 import Cursur from './components/cursur';
 import StarsCanvas from './components/canvas/Stars';
 import PreLoader from './components/PreLoader';
@@ -16,7 +19,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+    <div className='bg-light bg-no-repeat bg-cover overflow-hidden min-h-screen' style={{background: 'linear-gradient(135deg, #f5f3f0 0%, #e8e6e1 100%)'}}>
       <Router>
         <Cursur />
         {/* <PreLoader /> */}
@@ -31,10 +34,13 @@ const App = () => {
               <About />
               <Tech />
               <Services />
+              <Experience />
               <Work />
+              <Startups />
+              <Certifications />
               <div className="relative z-10">
                 <Contact />
-                <StarsCanvas />
+                {/* <StarsCanvas /> */}
                 <Footer />
               </div>
             </>

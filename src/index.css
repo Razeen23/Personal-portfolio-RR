@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 .btn {
-  color: #000000;
-  background:  linear-gradient(-225deg, #bafde9 0%, #fdb3ed 100%);
-  box-shadow: 0px 4.42184px 107.23px rgba(232, 83, 224, 0.51);
+  color: #ffffff;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  box-shadow: 0px 4.42184px 20px rgba(30, 64, 175, 0.3);
 }
 
 .btn:hover {
-  color: #fdfdfd;
-  background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
-  box-shadow: 0px 4.42184px 107.23px rgba(238, 236, 238, 0.51);
+  color: #ffffff;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  box-shadow: 0px 4.42184px 25px rgba(30, 64, 175, 0.4);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }
 
 .gradient,
 .active {
-  background: linear-gradient(-225deg, #bafde9 0%, #fdb3ed 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
 }
 
 .active {
@@ -27,7 +29,8 @@
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-white;
+    @apply font-secondary text-lg leading-8 text-gray-900;
+    background: linear-gradient(135deg, #f5f3f0 0%, #e8e6e1 100%);
   }
   .font1 {
     /* font-family: "WindSong", cursive; */
@@ -61,6 +64,13 @@
   }
   .section {
     @apply py-9 lg:py-24 lg:h-screen flex items-center;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 

@@ -37,7 +37,7 @@ const Projects = () => {
                                         I designed and developed a static website for Sarab Shipping to showcase their logistics services and establish a strong online presence. The website highlights their key services, including ocean, air, and land transportation, with a focus on clear navigation and user-friendly design. Built with HTML, CSS, and JavaScript, the site is fully responsive, ensuring compatibility across devices while maintaining fast load times and a smooth browsing experience.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">Responsive</p>
                                     </div>
@@ -99,7 +99,7 @@ const Projects = () => {
                                         I developed the Aryaa Foods website using React And Tailwind CSS, focusing on creating smooth animations to enhance user engagement. The project involved designing the entire webpage, ensuring a visually appealing layout that aligned with the brand's identity. I also edited and optimized product images to display their offerings in a clean and professional manner. The end result was a responsive, dynamic website that showcases Aryaa Foods' products effectively.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">Animations</p>
                                     </div>
@@ -149,7 +149,7 @@ const Projects = () => {
                                         The Hello Social website is currently under development but is accessible for viewing. Built using React and Tailwind CSS, the project emphasizes modern, interactive UI designs aimed at enhancing user experience. We are focusing on crafting a visually appealing and highly functional digital presence for Hello Social, blending responsive design with engaging user interactions.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">Innovative</p>
                                     </div>
@@ -214,7 +214,7 @@ const Projects = () => {
                                         Urban Horticulture provides essential farming equipment, such as nets and sheds, for small to medium-scale farmers in the UAE. The website features a clean and responsive design, offering detailed information about the company's products and services. Built with HTML, CSS, and JavaScript, it ensures an easy-to-navigate user experience, highlighting the company's expertise in the agricultural sector.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">User-friendly</p>
                                     </div>
@@ -265,7 +265,7 @@ const Projects = () => {
                                         SpotCard is a modern digital business card platform that revolutionizes how professionals share their contact information. Built with React and modern web technologies, it allows users to create, customize, and share digital business cards with QR codes. The platform features profile management, contact sharing, and seamless networking capabilities, making traditional paper business cards obsolete.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">Digital</p>
                                     </div>
@@ -323,7 +323,7 @@ const Projects = () => {
                                         Invite SpotCard is an innovative event invitation platform that simplifies event management. Built with modern web technologies, it allows users to create beautiful digital invitations, manage RSVPs, track guest responses, and handle event details all in one place. The platform offers seamless guest management and real-time updates for event organizers.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">Event</p>
                                     </div>
@@ -374,7 +374,7 @@ const Projects = () => {
                                         Muthayammal NEET is a comprehensive educational platform designed for NEET aspirants. The website provides information about coaching programs, course details, faculty, and admission procedures. Built with modern web technologies, it offers an intuitive user experience with responsive design, ensuring students can easily access information about courses, schedules, and educational resources.
                                     </p>
                                 </div>
-                                <div ref={inViewRef} className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+                                <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                                     <div className="flex items-center">
                                         <p className="text-3xl font-medium  sm:text-4xl">Educational</p>
                                     </div>

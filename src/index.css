@@ -30,7 +30,7 @@
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-gray-900;
-    background: linear-gradient(135deg, #f5f3f0 0%, #e8e6e1 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(59,130,246,1) 100%);
   }
   .font1 {
     /* font-family: "WindSong", cursive; */

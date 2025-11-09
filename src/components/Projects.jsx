@@ -30,7 +30,7 @@ const Projects = () => {
     }, [inView]);
 
     return (
-        <div style={{background: 'linear-gradient(135deg, #f5f3f0 0%, #e8e6e1 100%)', minHeight: '100vh'}}>
+        <div style={{background: 'linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(59,130,246,1) 100%)', minHeight: '100vh'}}>
             <Header />
             <section className='min-h-[100vh] lg:min-h-[100vh] flex justify-center items-center mt-[-50px]'>
                 <div className="relative font-secondary">

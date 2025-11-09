@@ -19,7 +19,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='bg-light bg-no-repeat bg-cover overflow-hidden min-h-screen' style={{background: 'linear-gradient(135deg, #f5f3f0 0%, #e8e6e1 100%)'}}>
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden min-h-screen' style={{background: 'linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(59,130,246,1) 100%)'}}>
       <Router>
         <Cursur />
         {/* <PreLoader /> */}

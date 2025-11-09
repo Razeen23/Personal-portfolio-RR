@@ -12,8 +12,7 @@ import Startups from './components/Startups';
 import Experience from './components/Experience';
 import Certifications from './components/Certifications';
 import Cursur from './components/cursur';
-import StarsCanvas from './components/canvas/Stars';
-import PreLoader from './components/PreLoader';
+// import PreLoader from './components/PreLoader';
 import Projects from './components/Projects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

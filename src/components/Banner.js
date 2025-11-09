@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '../assets2/obj1.webp';
 import Image2 from '../assets2/obj2.webp';
-import { Fagithub, FaYoutube, FaDribbble, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+import {  FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
@@ -72,9 +72,13 @@ const Banner = () => {
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto '>
                           <button className='btn btn-lg'>
             <a href='mailto:razeen.official23@gmail.com'>Contact Me</a></button>
-              <a href='#' className='text-gradient btn-link'>
+              <button 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className='text-gradient btn-link cursor-pointer'
+                aria-label="Scroll to top"
+              >
                 My Profile
-              </a>
+              </button>
             </motion.div>
             {/* link */}
             <motion.div

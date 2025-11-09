@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import styles from "../style";
+// import styles from "../style";
 import  EarthCanvas  from "./canvas/Earth";
-import SectionWrapper from "../hoc/SectionWrapper";
+// import SectionWrapper from "../hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {

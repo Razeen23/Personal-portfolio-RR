@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import { Tilt } from 'react-tilt';
 import img1 from '../assets/work11.webp';
 import img2 from '../assets/sarab-shipping.webp';
 import img3 from '../assets/spotcard.webp';
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Work = () => {

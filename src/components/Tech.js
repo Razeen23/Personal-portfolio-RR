@@ -5,7 +5,7 @@ import { technologies } from "../constants";
 import { services } from '../constants';
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 
 
 

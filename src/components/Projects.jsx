@@ -1,9 +1,6 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 import Header from './Header';
-import ellipse from '../assets/patten.webp';
 import pattern from '../assets/bg-pattern.webp';
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
 
 import img2 from '../assets/sarab-shipping.webp';
 import img3 from '../assets/aryaa_foods.webp';
@@ -14,20 +11,6 @@ import img7 from '../assets/event.spotcard.webp';
 // import img8 from '../assets/muthayammal_neet.webp';
 
 const Projects = () => {
-    const countUpRef2 = useRef(null);
-    const [countUpIsVisible2, setCountUpIsVisible2] = useState(false);
-
-    const { ref: inViewRef, inView } = useInView({
-        triggerOnce: true, // Count only when the element comes into view for the first time
-        threshold: 0.5 // Start animation when 50% of the element is in view
-    });
-
-    // Set visibility when inView changes
-    useEffect(() => {
-        if (inView) {
-            setCountUpIsVisible2(true);
-        }
-    }, [inView]);
 
     return (
         <div style={{background: 'linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(59,130,246,1) 100%)', minHeight: '100vh'}}>

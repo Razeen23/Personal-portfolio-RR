@@ -1,6 +1,6 @@
 import React from 'react';
-import { BiHomeAlt, BiUser, BiSolidBriefcaseAlt2, BiCommentCheck, BiSolidGame, BiPlayCircle, BiRocket, BiBriefcase } from 'react-icons/bi';
-import { BsFillClipboardDataFill, BsFillSunFill, BsAward } from 'react-icons/bs';
+import { BiHomeAlt, BiUser, BiSolidBriefcaseAlt2, BiCommentCheck, BiSolidGame, BiRocket, BiBriefcase } from 'react-icons/bi';
+import { BsFillClipboardDataFill, BsAward } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
 const Nav = () => {

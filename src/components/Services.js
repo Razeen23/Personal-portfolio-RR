@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import services3 from '../assets2/services.webp';
@@ -43,7 +42,7 @@ const Services = () => {
           className='flex-1'>
             <div>
               {services2.map((service, index) => {
-                const { name, description, link } = service;
+                const { name, description } = service;
 
                 return (
                   <div className='flex border-b border-gray-200/50 lg:min-h-[180px] md:min-h-[160px] sm:min-h-[140px] mb-[30px] pb-6 hover:bg-gray-50/30 transition-colors duration-300 rounded-lg px-4 py-4' key={index}>

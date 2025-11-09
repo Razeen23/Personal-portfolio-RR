@@ -33,9 +33,9 @@ const Certifications = () => {
   ];
 
   const languages = [
-    { name: 'English', level: 'Fluent' },
-    { name: 'Tamil', level: 'Native' },
-    { name: 'Hindi', level: 'Fluent' }
+    { name: 'English', level: '' },
+    { name: 'Tamil', level: '' },
+    { name: 'Hindi', level: '' }
   ];
 
   return (

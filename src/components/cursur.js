@@ -173,24 +173,14 @@ const Cursor = () => {
 
     const mouse = { x: 0, y: 0 };
     const circle = { x: 0, y: 0 };
-    const speed = 0.17;
-
-    let lastFrameTime = 0;
-    const frameInterval = 16; // ~60fps, but throttle to reduce CPU usage
+    const speed = 0.75; // High speed for immediate cursor following
     
-    const tick = (currentTime) => {
-      if (currentTime - lastFrameTime < frameInterval) {
-        window.requestAnimationFrame(tick);
-        return;
-      }
-      lastFrameTime = currentTime;
-      
+    const tick = () => {
+      // Use higher speed multiplier for faster response
       circle.x += (mouse.x - circle.x) * speed;
       circle.y += (mouse.y - circle.y) * speed;
 
       const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
-
-      // Simplified - remove complex velocity calculations
       circleElement.style.transform = translateTransform;
 
       window.requestAnimationFrame(tick);

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const Work = () => {
   return (
-    <section className='py-9 lg:py-24 flex items-center min-h-screen mb-8 lg:mb-12' id='work'>
+    <section className='section' id='work'>
       <div className='container mx-auto w-full'>
         <div className='flex flex-col lg:flex-row lg:gap-x-0 '>
           <motion.div
@@ -21,10 +21,10 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-8 mb-10 lg:mb-0 lg:mx-20'>
             {/* text */}
             <div>
-              <h2 className='font1 lg:text-[45px] leading-[1] text-accent'>
-                MY Previous Work.
+              <h2 className='font1 text-text mb-6'>
+                My Previous Work
               </h2>
-              <p className='mb-5 lg:text-[20px] md:text-[19px] sm:text-[16px]'>
+              <p className='font2 mb-8 text-textLight max-w-2xl'>
                 I've built high-performance web applications including SaaS dashboards with D3.js visualizations, automated server deployment systems, e-invoicing solutions, and interactive portfolios. My projects focus on performance optimization, user experience, and scalable architecture.
               </p>
               <Link to="/projects">

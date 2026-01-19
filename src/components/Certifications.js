@@ -48,7 +48,7 @@ const Certifications = () => {
           viewport={{ once: true, amount: 0.3 }}
           className='text-center mb-12 lg:mb-16'
         >
-          <h2 className='font1 text-accent leading-[0.8] mb-4'>
+          <h2 className='font1 text-text leading-[1.1] mb-6'>
             Certifications & Achievements
           </h2>
         </motion.div>

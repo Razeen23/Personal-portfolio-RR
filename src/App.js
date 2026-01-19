@@ -11,17 +11,19 @@ import Tech from './components/Tech';
 import Startups from './components/Startups';
 import Experience from './components/Experience';
 import Certifications from './components/Certifications';
-import Cursur from './components/cursur';
+import WhatsAppFloat from './components/WhatsAppFloat';
+// import Cursur from './components/cursur';
 // import PreLoader from './components/PreLoader';
 import Projects from './components/Projects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden min-h-screen' style={{background: 'linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(59,130,246,1) 100%)'}}>
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden min-h-screen'>
       <Router>
-        <Cursur />
+        {/* <Cursur /> */}
         {/* <PreLoader /> */}
+        <WhatsAppFloat />
 
         {/* Define your routes */}
         <Routes>

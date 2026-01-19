@@ -2,25 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!-- google fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Primary Meta Tags / SEO -->
+    <title>Razeen - Full Stack Developer | React.js Developer Portfolio</title>
+    <meta name="title" content="Razeen - Full Stack Developer | React.js Developer Portfolio" />
+    <meta name="description" content="Junior React.js Developer with 2+ years of experience building high-performance, scalable web applications. Expertise in React.js, JavaScript, Python, PHP, and modern UI/UX development. View my portfolio, projects, and experience." />
+    <meta name="keywords" content="Razeen, React.js Developer, Full Stack Developer, JavaScript Developer, Web Developer, Frontend Developer, UI/UX Designer, React Portfolio, Web Development, React.js, JavaScript, Python, PHP, Tailwind CSS, Three.js" />
+    <meta name="author" content="Razeen" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <link rel="canonical" href="https://razeen-portfolio.vercel.app/" />
+    
+    <!-- Open Graph / Facebook / WhatsApp / Instagram -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://razeen-portfolio.vercel.app/" />
+    <meta property="og:title" content="Razeen - Full Stack Developer | React.js Developer Portfolio" />
+    <meta property="og:description" content="Junior React.js Developer with 2+ years of experience building high-performance, scalable web applications. Expertise in React.js, JavaScript, Python, PHP, and modern UI/UX development." />
+    <meta property="og:image" content="https://razeen-portfolio.vercel.app/android-chrome-512x512.png" />
+    <meta property="og:image:secure_url" content="https://razeen-portfolio.vercel.app/android-chrome-512x512.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Razeen - Full Stack Developer Portfolio" />
+    <meta property="og:site_name" content="Razeen Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://razeen-portfolio.vercel.app/" />
+    <meta name="twitter:title" content="Razeen - Full Stack Developer | React.js Developer Portfolio" />
+    <meta name="twitter:description" content="React.js Developer with 2+ years of experience building high-performance, scalable web applications. Expertise in React.js, JavaScript, Python, PHP, and modern UI/UX development." />
+    <meta name="twitter:image" content="https://razeen-portfolio.vercel.app/android-chrome-512x512.png" />
+    <meta name="twitter:image:alt" content="Razeen - Full Stack Developer Portfolio" />
+    
+    <!-- WhatsApp/Instagram specific optimizations -->
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Performance Optimizations: Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Google Fonts with optimized loading - Luxury & Clean Typography -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Orbitron:wght@400;500;600;700;800;900&family=Satisfy&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-          />
-          <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Rubik+Glitch&family=Satisfy&family=Space+Grotesk:wght@300&family=WindSong&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="favicon-32x32.png">      
-    <title>Razeen Portfolio</title>
+    />
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Razeen",
+      "jobTitle": "Full Stack Developer",
+      "description": "Junior React.js Developer with 2+ years of experience building high-performance, scalable web applications",
+      "url": "https://razeen-portfolio.vercel.app/",
+      "sameAs": [],
+      "knowsAbout": [
+        "React.js",
+        "JavaScript",
+        "Python",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Three.js",
+        "Web Development",
+        "UI/UX Design",
+        "Full Stack Development"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Full Stack Developer",
+        "occupationLocation": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "skills": [
+          "React.js",
+          "JavaScript",
+          "Python",
+          "PHP",
+          "Frontend Development",
+          "Backend Development",
+          "UI/UX Design"
+        ]
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Razeen Portfolio",
+      "url": "https://razeen-portfolio.vercel.app/",
+      "description": "Portfolio website of Razeen - Full Stack Developer and React.js Developer",
+      "author": {
+        "@type": "Person",
+        "name": "Razeen"
+      }
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
+      // Global error handler for unhandled promise rejections (e.g., from Tawk.to)
+      // window.addEventListener('unhandledrejection', function(event) {
+      //   // Suppress Tawk.to fetch errors
+      //   if (event.reason && (
+      //     event.reason.message && event.reason.message.includes('Failed to fetch') ||
+      //     event.reason.toString && event.reason.toString().includes('Failed to fetch') ||
+      //     event.reason && typeof event.reason === 'string' && event.reason.includes('Failed to fetch')
+      //   )) {
+      //     console.warn('Tawk.to fetch error suppressed:', event.reason);
+      //     event.preventDefault(); // Prevent the error from being logged to console
+      //   }
+      // });
+
+      // // Global error handler for general errors
+      // window.addEventListener('error', function(event) {
+      //   // Suppress Tawk.to related errors
+      //   if (event.message && (
+      //     event.message.includes('Failed to fetch') ||
+      //     event.message.includes('tawk.to') ||
+      //     event.filename && event.filename.includes('tawk.to')
+      //   )) {
+      //     console.warn('Tawk.to error suppressed:', event.message);
+      //     event.preventDefault();
+      //   }
+      // });
+
       window.addEventListener('load', function() {
         if (window.innerWidth <= 768) { // Check if screen size is smaller than or equal to 768px (sm and md)
           alert('Welcome to Razeen\'s Portfolio ,\n View in Bigger Screen for Better experience!');
@@ -39,15 +166,22 @@
     -->
     <!--Start of Tawk.to Script-->
       <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/6799d66b825083258e0ce26d/1iioer5n1';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-      })();
+      // try {
+      //   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      //   (function(){
+      //     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      //     s1.async=true;
+      //     s1.src='https://embed.tawk.to/6799d66b825083258e0ce26d/1iioer5n1';
+      //     s1.charset='UTF-8';
+      //     s1.setAttribute('crossorigin','*');
+      //     s1.onerror = function() {
+      //       console.warn('Tawk.to script failed to load. This is usually safe to ignore.');
+      //     };
+      //     s0.parentNode.insertBefore(s1,s0);
+      //   })();
+      // } catch(e) {
+      //   console.warn('Tawk.to initialization error:', e);
+      // }
       </script>
       <!--End of Tawk.to Script-->
   </body>

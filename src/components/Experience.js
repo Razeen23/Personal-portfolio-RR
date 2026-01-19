@@ -74,10 +74,10 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.3 }}
           className='text-center mb-12 lg:mb-16'
         >
-          <h2 className='font1 text-accent leading-[0.8] mb-4'>
+          <h2 className='font1 text-text leading-[1.1] mb-6'>
             Work Experience
           </h2>
-          <h3 className='font2 text-[20px] lg:text-[24px] md:text-[20px] sm:text-[18px]'>
+          <h3 className='h3 text-textLight font-light'>
             Building scalable solutions and driving innovation
           </h3>
         </motion.div>
@@ -119,7 +119,7 @@ const Experience = () => {
                   {exp.achievements.map((achievement, idx) => (
                     <li
                       key={idx}
-                      className='flex items-start gap-3 font-secondary text-[15px] lg:text-[16px] text-gray-700'
+                      className='flex items-start gap-3 font2 text-textLight'
                     >
                       <span className='text-accent mt-1.5'>▸</span>
                       <span>{achievement}</span>

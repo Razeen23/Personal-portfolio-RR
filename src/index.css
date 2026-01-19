@@ -2,75 +2,138 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Luxury Button Styles */
 .btn {
   color: #ffffff;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-  box-shadow: 0px 4.42184px 20px rgba(30, 64, 175, 0.3);
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  box-shadow: 0px 8px 24px rgba(212, 175, 55, 0.25);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .btn:hover {
   color: #ffffff;
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-  box-shadow: 0px 4.42184px 25px rgba(30, 64, 175, 0.4);
+  background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+  box-shadow: 0px 12px 32px rgba(212, 175, 55, 0.35);
   transform: translateY(-2px);
-  transition: all 0.3s ease;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 4px 16px rgba(212, 175, 55, 0.25);
 }
 
 .gradient,
 .active {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
 }
 
 .active {
-  color: #040404;
+  color: #ffffff;
   padding: 1rem;
   border-radius: 100%;
 }
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-gray-900;
-    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(59,130,246,1) 100%);
+    @apply font-secondary text-base leading-relaxed text-text antialiased;
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 50%, #fafafa 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+  
+  /* Luxury Heading Styles */
   .font1 {
-    /* font-family: "WindSong", cursive; */
-    font-family: "Rubik Glitch", system-ui;
-    @apply text-[45px] lg:text-[45px] md:text-[30px] sm:text-[20px] lg:mb-6 md:mb-3 sm:mb-1 tracking-[10%] uppercase;
+    font-family: 'Playfair Display', serif;
+    @apply text-[32px] lg:text-[56px] md:text-[44px] sm:text-[28px] lg:mb-8 md:mb-6 sm:mb-4 tracking-tight;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
   }
+  
   .font2 {
-    font-family: "Space Grotesk", sans-serif;
-    @apply text-[17px] lg:text-[22px] md:text-[17px] sm:text-[15px] lg:mb-6 md:mb-3 sm:mb-1 tracking-[10%] ;
+    font-family: 'Inter', sans-serif;
+    @apply text-[16px] lg:text-[18px] md:text-[16px] sm:text-[15px] lg:mb-6 md:mb-4 sm:mb-3;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.7;
+    color: #4b5563;
   }
+  
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-primary text-[36px] lg:text-[48px] md:text-[40px] sm:text-[32px] mb-8 tracking-tight;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
   }
+  
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-primary font-semibold text-[24px] lg:text-[32px] md:text-[28px] sm:text-[22px] mb-6 leading-tight;
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
+  
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full font-secondary text-white font-medium;
+    letter-spacing: 0.02em;
   }
+  
   .btn-sm {
-    @apply h-[48px] px-6 text-sm;
+    @apply h-[48px] px-8 text-sm;
   }
+  
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply h-[56px] px-12 text-base;
   }
+  
   .btn-link {
-    @apply text-base;
+    @apply text-base font-medium;
+    color: #d4af37;
+    transition: all 0.3s ease;
   }
+  
+  .btn-link:hover {
+    color: #b8941f;
+    letter-spacing: 0.05em;
+  }
+  
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #d4af37 0%, #b8941f 50%, #d4af37 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+    font-weight: 600;
   }
+  
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
   .section {
-    @apply py-9 lg:py-24 lg:h-screen flex items-center;
+    @apply py-16 lg:py-32 lg:min-h-screen flex items-center;
   }
+  
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+  
+  /* Luxury Text Styles */
+  .text-luxury {
+    @apply text-accent font-primary;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Smooth Transitions */
+  * {
+    transition-property: color, background-color, border-color, transform, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
   }
 }
 

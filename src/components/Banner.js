@@ -10,9 +10,9 @@ import { fadeIn } from '../variants';
 const Banner = () => {
  
   return (
-    <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
+    <section className='min-h-[90vh] lg:min-h-[85vh] flex items-center py-16' id='home' >
       <div className='container mx-auto'>
-        <div className='flex flex-col gap-y-7 lg:flex-row lg:items-center lg:gap-x-12' >
+        <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-16' >
         <motion.div
             variants={fadeIn('right', 0.5)}
             initial='hidden'
@@ -27,32 +27,30 @@ const Banner = () => {
             alt=""
             />
           </motion.div>
-          <div className='flex-1 text-center forn-secondary'>
+          <div className='flex-1 text-center lg:text-left'>
             <motion.h1
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: true, amount: 0.3 }}
-              className='font1 text-[45px] lg:text-[75px] md:text-[55px] sm:text-[45px] leading-[0.8]'
-              // onMouseMove={onMouseMove}
-               >
-              <span>Mr.</span>Razeen
+              className='font1 text-text mb-4'
+              >
+              <span className='text-textLight font-light'>Mr. </span>Razeen
             </motion.h1>
             <motion.div
               variants={fadeIn('up', 0.4)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: true, amount: 0.3 }}
-              className='mb-6 text-[36px] ig:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-gray-900 lg:text-[35px] md:text-[30px] sm:text-[27px] mr-4'>I'm a</span>
-              <br />
+              className='mb-8 font-secondary'>
+              <span className='text-textLight text-lg mr-3 font-light'>I'm a</span>
               <TypeAnimation sequence={[
-                'Junior React.js Developer !', 2000,
-                'Full Stack Developer !', 2000,
-                'UI/UX Designer !', 2000,
+                'React.js Developer', 2000,
+                'Full Stack Developer', 2000,
+                'UI/UX Designer', 2000,
               ]}
                 speed={75}
-                className=' font2 text-accent lg:text-[31px] md:text-[28px] sm:text-[25px] mt-3'
+                className='text-accent font-semibold text-xl'
                 wrapper='span'
                 repeat={Infinity}
               />
@@ -62,7 +60,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: true, amount: 0.3 }}
-              className='font2 mb-8 maxw-lg mx-auto lg:mx-0'>If you see something off on my web page, remember that <span>"It’s not a bug. It’s an undocumented feature!"</span>
+              className='font2 mb-10 max-w-2xl mx-auto lg:mx-0 text-textLight leading-relaxed'>Crafting elegant digital experiences with clean code and thoughtful design. <span className='text-accent font-medium'>Building the future, one pixel at a time.</span>
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}

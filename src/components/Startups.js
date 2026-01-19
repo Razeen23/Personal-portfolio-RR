@@ -7,7 +7,7 @@ const Startups = () => {
   const startups = [
     {
       name: 'SpotCard',
-      url: 'https://spotcard.in',
+      url: 'https://business.spotcard.in',
       description: 'SpotCard is a digital business card platform that helps professionals create and share their contact information digitally. It provides a modern way to network and exchange contact details.',
       features: [
         'Digital Business Cards',
@@ -18,7 +18,7 @@ const Startups = () => {
     },
     {
       name: 'Invite SpotCard',
-      url: 'https://invite.spotcard.in',
+      url: 'https://spotcard.in',
       description: 'Invite SpotCard is an event invitation platform that allows users to create, manage, and send digital invitations for various events. It simplifies the event management process.',
       features: [
         'Event Invitations',
@@ -39,10 +39,10 @@ const Startups = () => {
           viewport={{ once: true, amount: 0.3 }}
           className='text-center mb-12 lg:mb-16'
         >
-          <h2 className='font1 text-accent leading-[0.8] mb-4'>
+          <h2 className='font1 text-text leading-[1.1] mb-6'>
             My Startups
           </h2>
-          <h3 className='font2 text-[20px] lg:text-[24px] md:text-[20px] sm:text-[18px]'>
+          <h3 className='h3 text-textLight font-light'>
             Building digital solutions for modern networking and event management
           </h3>
         </motion.div>
@@ -77,7 +77,7 @@ const Startups = () => {
                 </div>
               </div>
 
-              <p className='font-secondary text-[16px] lg:text-[18px] md:text-[16px] sm:text-[15px] text-gray-700 mb-6 leading-relaxed'>
+              <p className='font2 text-textLight mb-6'>
                 {startup.description}
               </p>
 
@@ -89,7 +89,7 @@ const Startups = () => {
                   {startup.features.map((feature, idx) => (
                     <li
                       key={idx}
-                      className='flex items-start gap-3 font-secondary text-[15px] lg:text-[16px] text-gray-700'
+                      className='flex items-start gap-3 font2 text-textLight'
                     >
                       <span className='text-accent mt-1.5'>▸</span>
                       <span>{feature}</span>

@@ -1,5 +1,4 @@
 import React from "react";
-import { BallCanvas } from "./canvas";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { technologies } from "../constants";
 import { services } from '../constants';
@@ -48,7 +47,7 @@ const ServiceCard = ({ index, title, icon }) => {
                         </div>
                         
                         {/* Title with refined typography */}
-                        <h3 className='relative z-10 text-text text-center h3 group-hover:text-accent transition-colors duration-500'>
+                        <h3 className='relative z-10 text-text text-center text-base sm:text-lg md:text-xl lg:text-2xl font-semibold font-primary mb-0 group-hover:text-accent transition-colors duration-500 leading-tight'>
                             {title}
                         </h3>
                         
@@ -72,17 +71,17 @@ const Tech2 = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="text-center mb-16 lg:mb-20"
+                    className="text-center mb-12 sm:mb-16 lg:mb-20 px-4"
                 >
-                    <div className="inline-block mb-4">
-                        <span className="text-sm lg:text-base font-semibold text-blue-600 uppercase tracking-widest">
+                    <div className="inline-block mb-3 sm:mb-4">
+                        <span className="text-xs sm:text-sm lg:text-base font-semibold text-blue-600 uppercase tracking-widest">
                             Expertise
                         </span>
                     </div>
-                    <h2 className="font1 text-text mb-6">
-                        Ground I Played
+                    <h2 className="font1 text-text mb-4 sm:mb-6 break-words">
+                        Technologies I Work With
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mx-auto rounded-full"></div>
+                    <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mx-auto rounded-full"></div>
                 </motion.div>
 
                 {/* Technologies Section */}
@@ -91,12 +90,12 @@ const Tech2 = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mb-20 lg:mb-24"
+                    className="mb-16 sm:mb-20 lg:mb-24"
                 >
-                    <h3 className="text-center text-xl lg:text-2xl font-semibold text-gray-700 mb-12 tracking-wide">
+                    <h3 className="text-center text-lg sm:text-xl lg:text-2xl font-semibold text-gray-700 mb-8 sm:mb-12 tracking-wide px-4">
                         Technologies & Tools
                     </h3>
-                    <div className='flex flex-wrap justify-center items-center gap-8 lg:gap-12 md:gap-8 sm:gap-6 px-4'>
+                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-6 lg:gap-8 px-4 sm:px-6 max-w-7xl mx-auto'>
                         {technologies.map((technology, index) => (
                             <motion.div
                                 key={technology.name}
@@ -104,9 +103,21 @@ const Tech2 = () => {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true, amount: 0.3 }}
-                                className='lg:w-28 lg:h-28 md:w-24 md:h-24 sm:w-20 sm:h-20 w-16 h-16 transform hover:scale-110 transition-transform duration-300'
+                                className='group w-full'
                             >
-                                <BallCanvas icon={technology.icon} />
+                                <div className='bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-2 sm:p-3 md:p-4 lg:p-5 border border-gray-200/50 shadow-md hover:shadow-xl transition-all duration-300 hover:border-accent/50 hover:-translate-y-1 flex flex-col items-center justify-center gap-1.5 sm:gap-2 md:gap-3 min-h-[70px] sm:min-h-[90px] md:min-h-[110px] lg:min-h-[120px]'>
+                                    <div className='relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 flex items-center justify-center flex-shrink-0'>
+                                        <img 
+                                            src={technology.icon} 
+                                            alt={technology.name}
+                                            className='w-full h-full object-contain filter group-hover:brightness-110 transition-all duration-300 group-hover:scale-110'
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <span className='text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-medium text-gray-700 text-center leading-tight group-hover:text-accent transition-colors duration-300 break-words px-1'>
+                                        {technology.name}
+                                    </span>
+                                </div>
                             </motion.div>
                         ))}
                     </div>

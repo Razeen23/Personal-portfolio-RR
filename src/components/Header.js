@@ -8,23 +8,23 @@ const Header = () => {
   const isProjectsPage = location.pathname === '/projects';
 
   return (
-    <header className='py-5'>
-        <div className='container mx-auto'>
-          <div className='flex justify-between items-center' >
+    <header className='py-4 sm:py-5'>
+        <div className='container mx-auto px-4 sm:px-0'>
+          <div className='flex justify-between items-center gap-2 sm:gap-4' >
           {isProjectsPage ? (
             <Link to="/">
-              <button className='btn btn-sm lg:h-[45px] lg:w-[200px] md:h-[40px] md:w-[180px] sm:h-[35px] sm:w-[160px] lg:text-[14px] md:text-[12px] sm:text-[11px]'>
+              <button className='btn btn-sm h-[40px] sm:h-[42px] md:h-[45px] px-4 sm:px-6 md:px-8 text-[11px] sm:text-[12px] md:text-[14px] whitespace-nowrap'>
                 Back to Home
               </button>
             </Link>
           ) : (
             <Link to="/projects">
-              <button className='btn btn-sm lg:h-[45px] lg:w-[200px] md:h-[40px] md:w-[180px] sm:h-[35px] sm:w-[160px] lg:text-[14px] md:text-[12px] sm:text-[11px]'>
+              <button className='btn btn-sm h-[40px] sm:h-[42px] md:h-[45px] px-4 sm:px-6 md:px-8 text-[11px] sm:text-[12px] md:text-[14px] whitespace-nowrap'>
                 View Projects
               </button>
             </Link>
           )}
-            <button className='btn btn-sm'>
+            <button className='btn btn-sm h-[40px] sm:h-[42px] md:h-[45px] px-4 sm:px-6 md:px-8 text-[11px] sm:text-[12px] md:text-[14px] whitespace-nowrap'>
             <a href='mailto:razeen.official23@gmail.com'>Hire me</a></button>
           </div>
 

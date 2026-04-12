@@ -9,6 +9,20 @@ import img5 from '../assets/urban.webp';
 import img6 from '../assets/spotcard.webp';
 import img7 from '../assets/event.spotcard.webp';
 import img8 from '../assets/muthayammalneet.webp';
+import imgHostzopSaas from '../assets/hostzop-saas.webp';
+import imgCloudHostzop from '../assets/cloud-hostzop.webp';
+import imgAiSupport from '../assets/ai-support.webp';
+
+const projectCategories = (p) => (p.categories?.length ? p.categories : [p.category]);
+
+/** When a project is in multiple categories, use the active filter for its section label; otherwise the first category. */
+const labelCategory = (p, selectedFilter) => {
+    const cats = projectCategories(p);
+    if (selectedFilter !== 'all' && cats.includes(selectedFilter)) {
+        return selectedFilter;
+    }
+    return cats[0];
+};
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -77,7 +91,7 @@ const Projects = () => {
             title: 'Hostzop SaaS Ecosystem',
             subtitle: 'Client & Reseller Platforms',
             description: 'Architected and built the frontend and backend for white-labeled SaaS platforms used by 1,000+ users. Developed interactive dashboards using D3.js to visualize billing, usage, and server metrics. Implemented scalable state management using React Context API and custom hooks. Optimized application performance using memoization (useMemo, useCallback), achieving a 35% improvement in key workflows. Enabled white-label support with custom domains and branding.',
-            image: null,
+            image: imgHostzopSaas,
             link: null,
             tags: ['Scalable', 'Enterprise'],
             techStack: 'React.js, Node.js, Express.js, MySQL, D3.js, Stripe, Razorpay'
@@ -88,7 +102,7 @@ const Projects = () => {
             title: 'Reseller Cloud Management Platform',
             subtitle: 'Full-Stack VM Infrastructure System',
             description: 'Built a full-stack reseller system allowing users to purchase, manage, and resell VM infrastructure. Implemented credit-based billing, monthly recurring subscriptions, and usage tracking. Developed admin and reseller dashboards for monitoring profits, usage, and client activity. Integrated secure authentication and role-based access control.',
-            image: null,
+            image: imgCloudHostzop,
             link: null,
             tags: ['Full-Stack', 'Cloud Infrastructure'],
             techStack: 'React.js, Node.js, Express.js, MySQL, Payment Gateways'
@@ -117,14 +131,37 @@ const Projects = () => {
         },
         {
             id: 10,
-            category: 'professional',
-            title: 'AI-Powered Support Automation System',
-            subtitle: 'RAG-Based AI Support Platform (Current Project)',
-            description: 'Developing an AI-driven support system to assist clients with server and application issues in a SaaS environment. Implemented Retrieval-Augmented Generation (RAG) using LangChain with Pinecone and FAISS, trained on internal knowledge bases. Built backend services using FastAPI (Python) for AI inference and support workflows. Enabled controlled automation for common setup and troubleshooting tasks. Integrated an automatic ticket escalation system when issues cannot be resolved by AI.',
+            categories: ['professional', 'ai-ml'],
+            title: 'Generative AI Support Assistant',
+            subtitle: 'RAG + LLM Technical Support',
+            description: 'Built a Generative AI technical support assistant capable of answering infrastructure and hosting queries using internal knowledge bases. Implemented Retrieval-Augmented Generation (RAG) pipelines using LangChain and vector similarity search to retrieve relevant context before generating responses. Developed FastAPI-based AI inference services to process user queries and deliver context-aware answers. Integrated AI workflows with support systems to automatically escalate unresolved issues into support tickets. Deployed the AI system on a Linux production server with Plesk, enabling real-time access to the AI assistant in a live environment.',
+            image: imgAiSupport,
+            link: null,
+            tags: ['RAG', 'LLM'],
+            techStack: 'Python, FastAPI, LangChain, FAISS'
+        },
+        // AI/ML Projects
+        {
+            id: 13,
+            category: 'ai-ml',
+            title: 'AI Financial Document Analyzer',
+            subtitle: 'LLM + Document Retrieval',
+            description: 'Built an AI application that analyzes earnings call transcripts and financial documents using LLM-powered analysis. Implemented document ingestion pipelines and vector search retrieval for semantic document querying. Enabled users to query large documents and generate summaries and insights using LLM-based responses. Designed a Streamlit interface for interactive document analysis and Q&A.',
             image: null,
             link: null,
-            tags: ['AI/ML', 'RAG', 'Current Project'],
-            techStack: 'Python, FastAPI, LangChain, RAG, Pinecone, FAISS'
+            tags: ['LLM', 'Vector Search'],
+            techStack: 'Python, Streamlit, Vector Search'
+        },
+        {
+            id: 14,
+            category: 'ai-ml',
+            title: 'AI Email Sender',
+            subtitle: 'LLM-Powered Outreach Automation',
+            description: 'Built an AI-powered email automation system that generates personalized job application emails using a local LLM (Ollama). Developed a pipeline that reads job leads from Excel spreadsheets and generates role-specific email content via prompt-based LLM generation. Implemented SMTP delivery with rate limiting, SQLite logging and deduplication, and region-aware resume routing (India / UAE) with role-based resume selection using keyword matching.',
+            image: null,
+            link: null,
+            tags: ['Ollama', 'Automation'],
+            techStack: 'Python, Ollama, SMTP, SQLite, Pandas'
         },
         // Startup Projects
         {
@@ -155,15 +192,17 @@ const Projects = () => {
         { id: 'all', label: 'All Projects' },
         { id: 'freelancing', label: 'Freelancing Projects' },
         { id: 'professional', label: 'Professional Experience' },
+        { id: 'ai-ml', label: 'AI/ML' },
         { id: 'startup', label: 'My Startups' }
     ];
 
     const filteredProjects = selectedCategory === 'all' 
         ? projects 
-        : projects.filter(project => project.category === selectedCategory);
+        : projects.filter((project) => projectCategories(project).includes(selectedCategory));
 
-    const ProjectCard = ({ project, index }) => {
+    const ProjectCard = ({ project, index, selectedCategory: activeCategory }) => {
         const isEven = index % 2 === 0;
+        const lc = labelCategory(project, activeCategory);
         
         return (
             <section className='min-h-[100vh] lg:min-h-[100vh] flex justify-center items-center'>
@@ -178,9 +217,10 @@ const Projects = () => {
                                         </div>
                                         <div className="text-center lg:text-left">
                                             <h3 className="mt-2 text-2xl sm:mt-8">
-                                                {project.category === 'freelancing' && 'Freelancing Project :'}
-                                                {project.category === 'professional' && 'Professional Experience :'}
-                                                {project.category === 'startup' && 'My Startup :'}
+                                                {lc === 'freelancing' && 'Freelancing Project :'}
+                                                {lc === 'professional' && 'Professional Experience :'}
+                                                {lc === 'ai-ml' && 'AI/ML Project :'}
+                                                {lc === 'startup' && 'My Startup :'}
                                             </h3>
                                             <h1 className="text-4xl font-bold leading-tight sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj text-shadow-xl">
                                                 {project.title}
@@ -236,7 +276,7 @@ const Projects = () => {
                                                         </div>
                                                         <div className="grid grid-cols-2 gap-4 mt-6">
                                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                                                                <div className="text-2xl font-bold text-white mb-2">{project.category === 'professional' ? 'Enterprise' : 'Platform'}</div>
+                                                                <div className="text-2xl font-bold text-white mb-2">{lc === 'professional' ? 'Enterprise' : lc === 'ai-ml' ? 'AI/ML' : 'Platform'}</div>
                                                                 <div className="text-white/80 text-sm">Solution</div>
                                                             </div>
                                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -266,7 +306,7 @@ const Projects = () => {
                                                         </div>
                                                         <div className="grid grid-cols-2 gap-4 mt-6">
                                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                                                                <div className="text-2xl font-bold text-white mb-2">{project.category === 'professional' ? 'Enterprise' : 'Platform'}</div>
+                                                                <div className="text-2xl font-bold text-white mb-2">{lc === 'professional' ? 'Enterprise' : lc === 'ai-ml' ? 'AI/ML' : 'Platform'}</div>
                                                                 <div className="text-white/80 text-sm">Solution</div>
                                                             </div>
                                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -286,9 +326,10 @@ const Projects = () => {
                                         </div>
                                         <div className="text-center lg:text-left">
                                             <h3 className="mt-2 text-2xl sm:mt-8">
-                                                {project.category === 'freelancing' && 'Freelancing Project :'}
-                                                {project.category === 'professional' && 'Professional Experience :'}
-                                                {project.category === 'startup' && 'My Startup :'}
+                                                {lc === 'freelancing' && 'Freelancing Project :'}
+                                                {lc === 'professional' && 'Professional Experience :'}
+                                                {lc === 'ai-ml' && 'AI/ML Project :'}
+                                                {lc === 'startup' && 'My Startup :'}
                                             </h3>
                                             <h1 className="text-4xl font-bold leading-tight sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj text-shadow-xl">
                                                 {project.title}
@@ -373,7 +414,7 @@ const Projects = () => {
             {/* Projects List */}
             {filteredProjects.length > 0 ? (
                 filteredProjects.map((project, index) => (
-                    <ProjectCard key={project.id} project={project} index={index} />
+                    <ProjectCard key={project.id} project={project} index={index} selectedCategory={selectedCategory} />
                 ))
             ) : (
                 <section className='min-h-[50vh] flex justify-center items-center'>
